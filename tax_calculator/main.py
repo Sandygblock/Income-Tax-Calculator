@@ -195,7 +195,6 @@ def display_result(result: TaxResult) -> None:
     if result.business_income:
         print(row("Business / Profession Income", format_inr(result.business_income)))
     if result.house_property_income:
-        sign = "" if result.house_property_income >= 0 else ""
         print(row("House Property Income / (Loss)", format_inr(result.house_property_income)))
     if result.capital_gains_normal:
         print(row("Capital Gains (Normal Rate)", format_inr(result.capital_gains_normal)))
